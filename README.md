@@ -10,6 +10,10 @@ Este projeto está sendo realizado como trabalho final do curso Técnico de Info
 
 ## **<p align="center">CONTROLE DE VERSÃO:</p>**
 
+- **LICENSE 1.0:** <br/>
+
+    Nessa versão 1.0 foi traduzido a licença do MIT para português.</br> 
+
 - **VERSÃO 1.0:** <br/>
 
     Nessa versão 1.0 foi realizado o upload dos arquivos do momento em que estamos no desenvolvimento, a partir do momento todas as versão serão comentadas no Commit e no README.</br> 
