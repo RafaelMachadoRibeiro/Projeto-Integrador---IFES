@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+
+
+html {
+    font-size: 62.5%;
+}
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, ;
+
+}
+
+header {
+    background-color: #8EA390;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 5rem;
+    padding: 0.5rem;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    width: 27rem;
+}
+.icon{
+    width: 4rem;
+}
+.icon:hover{
+    width: 5.5rem;
+}
+nav .menu{
+    display: flex;
+    justify-content: space-around;
+    width: 26rem;
+}
+header h2 {
+    font-family: "Grand Hotel", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    margin-right: 20rem;
+}
+
+header .botao {
+    border-radius: 0.5rem;
+    border: none;
+    width: 10rem;
+    height: 3rem;
+    background-color: #D9D9D9;
+    font-family: "Grand Hotel";
+    box-sizing: border-box;
+    text-align: center;
+    display: inline-block;
+    font-size: 2rem;
+}
+
+header .dir {
+    display: flex;
+    width: 30rem;
+}
+
+.dir #txtBusca {
+    height: 2.8rem;
+    margin: auto;
+    margin-right: 0;
+
+
+}
+
+.dir #btnBusca {
+    margin: auto;
+    margin-left: 0;
+    height: 2.8rem;
+    width: 4rem;
+}
+.dir #btnBusca #iconb {
+    width: 2rem;
+}
+header h2:hover{
+    color: #011e2c;
+
+}
+
+.dir #btnBusca:hover{
+    background-color: #011e2c;
+    color: white;
+}
+
+header .botao:hover {
+    background-color: #011e2c;
+    color: white;
+}
+
+.dir #img {
+    width: 20%;
+}
+body{
+    background:#011e2c;
+    font-family:'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased !important;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:#D9D9D9;
+    min-width: 15rem;
+    overflow: auto;
+    margin-top: 3.8rem;
+    margin-left: 8.5rem;
+    z-index: 1;
+  }
+  
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    font-family: "Grand Hotel", cursive;
+    font-size: 1.2rem;
+    text-decoration: none;
+    max-height:2.8rem;
+    display: block;
+}
+.dropdown-content a:hover {background-color: #8EA390;}
+
+.show {display: block;}
+
+
+.main{
+    max-width: 120rem;
+    margin: 0 auto;
+  }
+  li{
+    list-style:none;
+  }
+  .newPost{
+    width:100%;
+    height: 24rem;
+  
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 5rem 0;
+    padding:2.5rem;
+  
+    background:#D9D9D9;
+    border-radius: 1rem;
+    box-shadow: 1px 2px 2px rgba(0,0,0,0.05);
+  }
+  
+  div.newPost div.infoUser{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  div.newPost div.infoUser div.imgUser img{
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    background: #333;
+  }
+  
+  div.newPost div.infoUser strong{
+    font-size: 16px;
+    color:#8EA390;
+    margin-left: 10px;
+  }
+  
+  div.newPost form.formPost{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  div.newPost form.formPost textarea{
+    background:#fff;
+    margin:15px 0;
+    padding: 25px;
+    border-radius: 10px;
+    resize: none;
+    border: 0;
+    height: 90px;
+    outline: none;
+  
+    font-weight: bold;
+    color:#727272;
+    font-family: 'Roboto', sans-serif;
+    border:2px solid #fff;
+  }
+  div.newPost form.formPost textarea:focus{
+    border:2px solid #8EA390;
+  
+  }
+  div.newPost form.formPost div.iconsAndButton{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  div.newPost form.formPost div.iconsAndButton div.icons{
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  div.newPost form.formPost div.iconsAndButton div.icons button{
+    outline: none;
+    margin-right: 15px;
+    border:0;
+    background: #fff;
+    cursor: pointer;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  div.newPost form.formPost div.iconsAndButton button.btnSubmitForm{
+    background: #8EA390;
+    padding: 10px 50px;
+    color:#fff;
+    font-weight: bold;
+    cursor: pointer;
+  
+    border: 0;
+    border-radius: 10px;
+    transition: background 0.2s;
+  }
+  div.newPost form.formPost div.iconsAndButton button.btnSubmitForm:hover{
+    background: #011e2c;
+  }
+  
+  ul.posts li.post{
+    margin-bottom: 50px;
+    background: #fff;
+    width: 100%;
+    font-family:'Roboto', sans-serif;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 1px 0 3px rgba(0,0,0,0.05);
+  }
+  ul.posts li.post div.infoUserPost{
+    display: flex;
+    align-items: center;
+  }
+  
+  ul.posts li.post div.infoUserPost div.imgUserPost img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #8EA390;
+  }
+  ul.posts li.post div.infoUserPost  div.nameAndHour{
+    margin-left: 10px;
+  }
+  
+  ul.posts li.post div.infoUserPost  div.nameAndHour >strong{
+    color:#8EA390;
+  }
+  
+  ul.posts li.post div.infoUserPost div.nameAndHour  >p{
+    color:#d1d1d1;
+    font-size:12px;
+  }
+  
+  ul.posts li.post >p{
+    width: 100%;
+    margin:20px 0;
+    font-weight: bold;
+    color: #727272;
+  }
+  ul.posts li.post div.actionBtnPost{
+    display:flex;
+    align-items: center;
+  }
+  ul.posts li.post div.actionBtnPost button.filesPost{
+    padding:5px 20px;
+    border: 0;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    outline:none;
+    margin-right: 10px;
+    border-radius:10px;
+    cursor: pointer;
+    color:#fff;
+    font-weight: bold;
+    transition: background 0.2s;
+  
+  }
+  
+  ul.posts li.post div.actionBtnPost button.filesPost img{
+    margin-right: 5px;
+  }
+  .like{
+    background: #ff6b6b;
+  }
+  .like:hover{
+    background: rgb(248,75,75);
+  }
+  .comment{
+    background: #ffc320;
+  }
+  .comment:hover{
+    background: rgb(245,180,0);
+  }
+  .share{
+    background: #23a0ff;
+  }
+  .share:hover{
+    background: rgb(8,141,241);
+  }
+  

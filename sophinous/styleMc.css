@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+
+
+html {
+    font-size: 62.5%;
+}
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif ;
+
+}
+
+header {
+    background-color: #8EA390;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 5rem;
+    padding: 0.5rem;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    width: 27rem;
+}
+.icon{
+    width: 4rem;
+}
+.icon:hover{
+    width: 5.5rem;
+}
+nav .menu{
+    display: flex;
+    justify-content: space-around;
+    width: 26rem;
+}
+header h2 {
+    font-family: "Grand Hotel", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    margin-right: 20rem;
+}
+
+header .botao {
+    border-radius: 0.5rem;
+    border: none;
+    width: 10rem;
+    height: 3rem;
+    background-color: #D9D9D9;
+    font-family: "Grand Hotel";
+    box-sizing: border-box;
+    text-align: center;
+    display: inline-block;
+    font-size: 2rem;
+}
+
+header .dir {
+    display: flex;
+    width: 30rem;
+}
+
+.dir #txtBusca {
+    height: 2.8rem;
+    margin: auto;
+    margin-right: 0;
+
+
+}
+
+.dir #btnBusca {
+    margin: auto;
+    margin-left: 0;
+    height: 2.8rem;
+    width: 4rem;
+}
+.dir #btnBusca #iconb {
+    width: 2rem;
+}
+header h2:hover{
+    color: #011e2c;
+
+}
+
+.dir #btnBusca:hover{
+    background-color: #011e2c;
+    color: white;
+}
+
+header .botao:hover {
+    background-color: #011e2c;
+    color: white;
+}
+
+.dir #img {
+    width: 20%;
+}
+
+body {
+    background-color: black;
+}
+.hero{
+    width: 100%;
+    height: 100%;
+    background-color: linear-gradiente(45deg,#6ac1c5,#bda5ff);
+    position: absolute;
+}
+
+#calendar{
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
