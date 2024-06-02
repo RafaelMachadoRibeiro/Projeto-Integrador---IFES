@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sophinous</title>
+    <link rel="stylesheet" href="css/styleMp.css">
+    <link rel="stylesheet" href="css/styleProfileEdit.css">
+    <script src="js/menu.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="dir">
+            <img id="img" src="img/WhatsApp Image 2024-04-08 at 11.42.03.jpeg" alt="logo">
+            <input onkeyup="filterFunction()" type="text" id="txtBusca" placeholder="Pesquisar..." />
+            <div id="myDropdown" class="dropdown-content">
+                <a href="">Rafael Ribeiro Machado</a>
+                <a href="">Bruno Almeida Machado</a>
+                <a href="">Mateus Correia De Andrade</a>
+                <a href="">Boaz</a>
+                <a href="">Richard</a>
+                <a href="">Henrique</a>
+                <a href="">João Pedro</a>
+            </div>
+            <button onclick="myFunction()" id="btnBusca"><img id="iconb" src="img/lupa.png" alt=""></button>
+        </div>
+        <h2>Sophinous</h2>
+        <nav>
+            <ul class="menu">
+                <l><a href=""><img class="icon" src="img/adicionar.png" alt=""></a></l>
+                <l><a href="menu.html"><img class="icon" src="img/casa.png" alt=""></a></l>
+                <l><a href=""><img class="icon" src="img/pasta.png" alt=""></a></l>
+                <l><a href=""><img class="icon" src="img/data-limite.png" alt=""></a></l>
+                <l><a id="user"><img class="icon" src="img/do-utilizador.png" alt=""></a></l>
+                <l><a href="index.html"><img class="icon" src="img/porta.png" alt=""></a></l>
+            </ul>
+        </nav>
+    </header>
+    <section class="container">
+        <article>
+            <div class="imgProfile"><img src="img/do-utilizador.png" alt=""></div>
+        </article>
+        <form action="">
+            <article class="btnFoto"><input type="file" name="foto_usuario" id="fotoPerfil"></article>
+            <article class="grupoDiv">
+                <div class="coluna1">
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" name="nome_usuario" id="nome" class="Formulário">
+                    <label for="email">Email</label>
+                    <input type="email" name="email_usuario" id="email" class="Formulário">
+                    <label for="contato">Contato</label>
+                    <input type="tel" name="contato_usuario" id="contato" class="Formulário">
+                    <label for="nascimento">Data de Nascimento</label>
+                    <input type="date" name="nascimento_usuario" id="nascimento" class="Formulário">
+                    <label>Gênero</label>
+                    <div class="btnRadio">
+                        <input type="radio" value="Masculino" name="usuario_genero" id="masculino">
+                        <label for="masculino">Masculino</label>
+                    </div>
+                    <div class="btnRadio">
+                        <input type="radio" value="Feminino" name="usuario_genero" id="feminino">
+                        <label for="feminino">Feminino</label>
+                    </div>
+                    <div class="btnRadio">
+                        <input type="radio" value="NaoBinario" name="usuario_genero" id="nao_binario">
+                        <label for="nao_binario">Não Binario</label>
+                    </div>
+                    <label for="sobre">Sobre mim</label>
+                </div>
+                <div class="coluna2">
+                    <label for="ensino">Instituição de Ensino</label>
+                    <input type="text" name="ensino_usuario" id="ensino" class="Formulário">
+                    <label for="curso">Curso</label>
+                    <input type="text" name="curso_usuario" id="curso" class="Formulário">
+                    <label for="periodo">Período</label>
+                    <input type="number" name="periodo_usuario" id="periodo" class="Formulário">
+                    <label for="ineteresse">Diciplinas/Interesses</label>
+                    <input type="text" name="Diciplinas_usuarios" id="Diciplinas" class="Formulário">
+                </div>
+            </article>
+            <textarea name="sobre_usuario" id="sobre"></textarea>
+            <article class="btnEnviar">
+                <button type="submit">CONFIRMAR</button>
+            </article>
+        </form>
+    </section>
+
+    <div id="popuPerfil" class="hidden">
+        <div class="perfil-header">
+            <img src="img/do-utilizador.png" alt="User Image" class="imagemPerfil">
+            <h3>Usuário</h3>
+        </div>
+        <div class="perfil-stats">
+            <p id="contadorSeguindo">Seguindo: <span>100</span></p>
+            <p id="contadorSegidores">Seguidores: <span>150</span></p>
+        </div>
+        <button id="botaoEdi" onclick="entrar()">Editar Perfil</button>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/scripts.js" defer></script>
+    <title>Sophinous</title>
+</head>
+
+<body>
+    <header>
+        <div class="dir">
+            <img id="img" src="img/WhatsApp Image 2024-04-08 at 11.42.03.jpeg" alt="logo">
+        </div>
+        <h2>Sophinous</h2>
+        <nav>
+            <button class="botao">Login</button>
+        </nav>
+    </header>
+    <section class="meio">
+        <article>
+            <img id="logo" src="img/WhatsApp Image 2024-04-08 at 11.42.03.jpeg" alt="logo">
+            <p>Somos uma rede social acadêmica que tem como objetivo transformar o ambiente acadêmico em algo menos
+                exclusivo e mais diversificado. Nossa ideia é utilizar nossa plataforma para integrar alunos de todo o
+                Brasil e diminuir a distância entre o ensino médio e as universidades, permitindo que pessoas com menos
+                experiência acadêmica recebam ajuda e apoio de pessoas que já passaram pelo que elas estão passando.
+                Além de ser uma simples rede social, também oferecemos um ambiente online que permite ao estudante criar
+                mecanismos que os auxiliem a melhorar e organizar seu ambiente acadêmico. </p>
+        </article>
+    </section>
+
+    <div id="modal" class="hide">
+        <div class="titulo">
+            <h1>Sophinous</h1>
+            <button id="close-modal"><img id="icon" src="img/botao-fechar.png" alt="fechar"></button>
+        </div>
+        <img id="login1" src="img/WhatsApp Image 2024-04-08 at 11.42.03.jpeg" alt="Logo">
+
+        <a id="menu" href="/Modelo ppi/menu.html"></a>
+        <div id="modal_login">
+            <form class="form">
+                <div class="form-control">
+                    <input type="text" name="txtusuario" id="txtusuario" placeholder="Login:">
+                    <small>Mensagem erro</small>
+                </div>
+
+
+
+                <div class="form-control">
+                    <input type="txtsenha" name="txtsenha" id="txtsenha" placeholder="Senha:">
+                    <small>Mensagem erro</small>
+                </div>
+
+
+                <button id="entrar" type="submit">Entrar</button>
+                <button type="reset">Limpar</button>
+                <button id="but_cad">Cadastrar</button>
+            </form>
+        </div>
+    </div>
+    <div id="modal_cadastro" class="hide">
+        <div class="titulo_cadastro">
+            <h1>Sophinous</h1>
+            <button id="close-modalCad"><img id="icon" src="img/botao-fechar.png" alt="fechar"></button>
+        </div>
+        <img id="login2" src="img/WhatsApp Image 2024-04-08 at 11.42.03.jpeg" alt="Logo">
+
+        <div id="cadastro">
+            <form class="form_cadastro">
+                <div class="form-control">
+                    <input type="text" name="txtusuario" id="txtUsuario" placeholder="Nome de Usuário:">
+                    <small>Mensagem erro</small>
+                </div>
+                <div class="form-control">
+                    <input type="text" name="txtnome" id="txtnome" placeholder="Nome Completo:">
+                    <small>Mensagem erro</small>
+                </div>
+                <div class="form-control">
+                    <input type="date" name="txtdata" id="txtdata" placeholder="Data de Nacimento:">
+                    <small>Mensagem erro</small>
+                </div>
+                <div class="form-control">
+                    <input type="email" name="txtemail" id="txtemail" placeholder="Email:">
+                    <small>Mensagem erro</small>
+                </div>
+                <div class="form-control">
+                    <input type="txtsenha" name="txtsenha" id="txtSenha" placeholder="Senha:">
+                    <small>Mensagem erro</small>
+                </div>
+                <div class="form-control">
+                    <input type="txtCsenha" name="txtCsenha" id="txtCsenha" placeholder="Confirmar Senha:">
+                    <small>Mensagem erro</small>
+                </div>
+
+                <button type="submit">Cadastrar</button>
+                <button type="reset">Limpar</button>
+            </form>
+        </div>
+
+</body>
+
+</html>
