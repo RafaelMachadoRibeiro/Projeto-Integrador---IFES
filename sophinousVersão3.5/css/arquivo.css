@@ -1,0 +1,112 @@
+/* Página de arquivo */
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+
+html {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+
+}
+.container {
+    display: flex;
+    background-color: black;
+    padding: 20px;
+    margin-top: 20px; 
+}
+
+.sidebar {
+    width: 20%;
+    background-color: black;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border: 5px solid #8EA390;
+    border-radius: 1.5%;
+}
+
+.sidebar button {
+    background-color: #ffffff;
+    border: none;
+    margin: 10px 0;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.content {
+    width: 80%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: 5px solid #8EA390;
+    border-radius: 1%;
+    margin-left: 20px;
+}
+
+.folder {
+    width: 30%;
+    margin: 20px;
+    text-align: center;
+    background-color: #011e2c;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.folder img {
+    width: 50px;
+    height: 50px;
+}
+
+.folder span {
+    display: block;
+    margin-top: 10px;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.sidebar button:hover {
+    width: 101%; 
+    background-color: #F0FFFF
+}
+
+.sidebar button:active {
+    width: 101%;
+    background-color:#011e2c;
+    color : #ffffff; 
+}
+
+.action-buttons {
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    gap: 20px;
+    bottom: 20px;
+    left: 0;
+    margin-bottom: 0.8rem;
+}
+
+.btn-action {
+    background-color: #8EA390;
+    border: none;
+    padding: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+
+.btn-action img {
+    width: 3rem;
+    height: 3rem;
+}
+
+.btn-action:hover {
+    background-color: #011e2c;
+}

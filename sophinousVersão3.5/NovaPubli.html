@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sophinous</title>
+    <link rel="stylesheet" href="css/styleMp.css">
+    <link rel="stylesheet" href="css/stylePublicacao.css">
+    <script src="js/menu.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="dir">
+            <img id="img" src="img/WhatsApp Image 2024-04-08 at 11.42.03.jpeg" alt="logo">
+            <input onkeyup="filterFunction()" type="text" id="txtBusca" placeholder="Pesquisar..." />
+            <div id="myDropdown" class="dropdown-content">
+                <a href="perfil_user.html">Rafael Ribeiro Machado</a>
+                <a href="">Bruno Almeida Machado</a>
+                <a href="">Mateus Correia De Andrade</a>
+                <a href="">Boaz</a>
+                <a href="">Richard</a>
+                <a href="">Henrique</a>
+                <a href="">João Pedro</a>
+            </div>
+            <button onclick="myFunction()" id="btnBusca"><img id="iconb" src="img/lupa.png" alt=""></button>
+        </div>
+        <h2>Sophinous</h2>
+        <nav>
+            <ul class="menu">
+                <l><a href="NovaPubli.html"><img class="icon" src="img/adicionar.png" alt=""></a></l>
+                <l><a href="menu.html"><img class="icon" src="img/casa.png" alt=""></a></l>
+                <l><a href="arquivos.html"><img class="icon" src="img/pasta.png" alt=""></a></l>
+                <l><a href="calendario.html"><img class="icon" src="img/data-limite.png" alt=""></a></l>
+                <l><a id="user"><img class="icon" src="img/do-utilizador.png" alt=""></a></l>
+                <l><a href="index.html"><img class="icon" src="img/porta.png" alt=""></a></l>
+            </ul>
+        </nav>
+    </header>
+    <section class="container">
+        <header class="tituloForm">
+            <h1>NOVA PUBLICAÇÃO</h1>
+        </header>
+        <form action="">
+            <article>
+                <div class="coluna">
+                    <label for="titulo">Titulo</label>
+                    <input type="text" name="titulo_publi" id="titulo">
+                    <label for="tema">Tema</label>
+                    <input type="text" name="tema_publi" id="tema">
+                    <label>Visualização</label>
+                    <div class="btnRadio">
+                        <input type="radio" value="publico" name="visualizacao_publi" id="publico">
+                        <label for="publico">Público</label>
+                    </div>
+                    <div class="btnRadio">
+                        <input type="radio" value="privado" name="visualizacao_publi" id="privado">
+                        <label for="privado">Privado</label>
+                    </div>
+                    <label for="publicacao">Publicação</label>
+                </div>
+            </article>
+            <textarea name="publi_usuario" id="publicacao"></textarea>
+            <article class="btnContainer">
+                <div class="btnSalvar">
+                    <button>Salvar</button>
+                </div>
+                <div class="btnEnviar">
+                    <input type="file" name="arquivo_enviado" id="arqPublicacao">
+                </div>
+                <div class="btnConfirmar">
+                    <button type="submit">CONFIRMAR</button>
+                </div>
+            </article>
+        </form>
+    </section>
+
+    <!--popup do usuario-->
+    <div id="popuPerfil" class="hidden">
+        <div class="perfil-header">
+            <img src="img/do-utilizador.png" alt="User Image" class="imagemPerfil">
+            <h3>Usuário</h3>
+        </div>
+        <div class="perfil-stats">
+            <p id="contadorSeguindo">Seguindo: <span>100</span></p>
+            <p id="contadorSegidores">Seguidores: <span>150</span></p>
+        </div>
+        <button id="botaoEdi" onclick="entrar()">Perfil</button>
+    </div>
+</body>
+
+</html>
