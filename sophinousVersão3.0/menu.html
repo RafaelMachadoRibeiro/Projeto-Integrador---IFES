@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styleMp.css">
+  <link rel="stylesheet" href="css/styleM.css">
+  <script src="js/menu.js"></script>
+  <title>Sophinous</title>
+</head>
+
+<body>
+  <header>
+    <div class="dir">
+      <img id="img" src="img/WhatsApp Image 2024-04-08 at 11.42.03.jpeg" alt="logo">
+      <input onkeyup="filterFunction()" type="text" id="txtBusca" placeholder="Pesquisar..." />
+      <div id="myDropdown" class="dropdown-content">
+        <a href="perfil_user.html">Rafael Machado Ribeiro</a>
+        <a href="">Bruno Almeida Machado</a>
+        <a href="">Mateus Correia De Andrade</a>
+        <a href="">Boaz</a>
+        <a href="">Richard</a>
+        <a href="">Henrique</a>
+        <a href="">João Pedro</a>
+      </div>
+      <button onclick="myFunction()" id="btnBusca"><img id="iconb" src="img/lupa.png" alt=""></button>
+    </div>
+    <h2>Sophinous</h2>
+    <nav>
+      <ul class="menu">
+        <l><a href=""><img class="icon" src="img/adicionar.png" alt=""></a></l>
+        <l><a href="menu.html"><img class="icon" src="img/casa.png" alt=""></a></l>
+        <l><a href="arquivos.html"><img class="icon" src="img/pasta.png" alt=""></a></l>
+        <l><a href="calendario.html"><img class="icon" src="img/data-limite.png" alt=""></a></l>
+        <l><a id="user"><img class="icon" src="img/do-utilizador.png" alt=""></a></l>
+        <l><a href="index.html"><img class="icon" src="img/porta.png" alt=""></a></l>
+    </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+
+    <!-- Formulário de postagem -->
+    <div class="newPost">
+
+      <div class="infoUser">
+        <div class="imgUser">
+          <img src="img/do-utilizador.png" alt="">
+        </div>
+        <strong>Usuário</strong>
+      </div>
+
+      <form action="" class="formPost" id="formPost">
+        <textarea name="textarea" placeholder="Fazer uma publicação ...." id="textarea"></textarea>
+        <div class="iconsAndButton">
+          <div class="icons">
+            <button type="button" class="btnFileForm" id="btnImage">
+              <img src="img/adicionar-imagem.png" alt="Adicionar uma imagem">
+            </button>
+            <button type="button" class="btnFileForm" id="btnGif">
+              <img src="img/arquivo-gif.png" alt="Adicionar um gif">
+            </button>
+            <button type="button" class="btnFileForm" id="btnVideo">
+              <img src="img/adicionar-video.png" alt="Adicionar um vídeo">
+            </button>
+            <button type="button" class="btnFileForm" id="btnPDF">
+              <img src="img/arquivo.png" alt="Adicionar um PDF">
+            </button>
+          </div>
+          <button type="submit" id="botao" class="btnSubmitForm">Publicar</button>
+        </div>
+      </form>
+    </div>
+
+    <ul class="posts" id="posts"></ul>
+    <template id="post-template">
+      <li class="post">
+        <div class="infoUserPost">
+          <div class="imgUserPost"><img src="img/do-utilizador.png" alt="User Image"></div>
+          <div class="nameAndHour">
+            <strong>Usuário</strong>
+            <p class="time"></p>
+          </div>
+        </div>
+        <p class="postContent"></p>
+        <div class="actionBtnPost">
+          <button type="button" class="filesPost like" onclick="likePost()">
+            <img src="img/heart.svg" alt="Curtir"> Curtir
+          </button>
+          <button type="button" class="filesPost comment" onclick="commentPost()">
+            <img src="img/comment.svg" alt="Comentar"> Comentar
+          </button>
+          <button type="button" class="filesPost share">
+            <img src="img/share.svg" alt="Compartilhar"> Compartilhar
+          </button>
+        </div>
+      </li>
+    </template>
+  </main>
+
+  <div id="popuPerfil" class="hidden">
+    <div class="perfil-header">
+      <img src="img/do-utilizador.png" alt="User Image" class="imagemPerfil">
+      <h3>Usuário</h3>
+    </div>
+    <div class="perfil-stats">
+      <p id="contadorSeguindo">Seguindo: <span>100</span></p>
+      <p id="contadorSegidores">Seguidores: <span>150</span></p>
+    </div>
+    <button id="botaoEdi" onclick="entrar()">Editar Perfil</button>
+  </div>
+
+  <script src="js/PostFeedRev2.js"></script>
+</body>
+
+</html>
