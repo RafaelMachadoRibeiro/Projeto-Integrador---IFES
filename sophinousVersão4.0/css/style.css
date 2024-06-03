@@ -175,31 +175,34 @@ body {
 
 .titulo {
     display: flex;
-    justify-content: right;
+    justify-content:center;
+    align-items: center ;
     box-sizing: border-box;
-    margin-top: 0;
 }
-
+.FECHAR{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    box-sizing: border-box;
+}
 .titulo h1 {
     font-family: "Grand Hotel", cursive;
     font-size: 3rem;
     color: white;
     margin-top: 5rem;
-    margin-right: 25rem;
 }
 
-.titulo button {
+.FECHAR button {
     border-radius: 60%;
     height: 3rem;
     width: 3rem;
     margin-top: 1.2rem;
-    margin-right: 0.3rem;
     border-color: none;
     box-sizing: border-box;
 
 }
 
-.titulo #icon {
+.FECHAR #icon {
     width: 2.3rem;
     margin-left: 0;
     margin-top: 0;

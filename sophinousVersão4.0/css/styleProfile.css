@@ -81,8 +81,11 @@ h1 {
     width: 98%;
     height: 70rem;
     background-color: #cccccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-top: 1rem;
-    display: block;
     margin: 2rem auto;
     box-sizing: border-box;
     padding: 1.5rem;
