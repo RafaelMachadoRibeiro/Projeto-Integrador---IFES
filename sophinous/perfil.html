@@ -4,14 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <title>Sophinous</title>
     <link rel="stylesheet" href="css/styleMp.css">
-    <link rel="stylesheet" href="css/evo-calendar.midnight-blue.min.css">
-    <link rel="stylesheet" href="css/evo-calendar.min.css">
-    <script src="js/menu.js"></script>
-
-
-    <title>Calendario</title>
+    <link rel="stylesheet" href="css/styleProfile.css">
+    <script src="js/menu.js" defer></script>
 </head>
 
 <body>
@@ -42,11 +38,32 @@
             </ul>
         </nav>
     </header>
-    <div class="hero">
+    <section class="container">
+        <article class="containerImg">
+            <div class="imgProfile"><img src="img/do-utilizador.png" alt=""></div>
+        </article>
+        <article class="">
+            <h1>Usuario</h1>
+            <h1>IFES - Campus Serra</h1>
+            <h1>Tecnico Informática</h1>
+            <a href="editPerfil.html">
+                <button>Editar Perfil</button>
+            </a>
+            <div class="divisor"></div>
+            <article class="container2">
+                <div id="post1" class="post">
+                    <img src="img/Captura de tela 2024-06-01 142351.png" alt="">
+                </div>
+                <div id="post2" class="post">
+                    <img src="img/Captura de tela 2024-06-01 142420.png" alt="">
+                </div>
+                <div id="post3" class="post">
+                    <img src="img/Captura de tela 2024-06-01 142450.png" alt="">
+                </div>
+            </article>
+        </article>
+    </section>
 
-        <div id="calendar"></div>
-
-    </div>
     <div id="popuPerfil" class="hidden">
         <div class="perfil-header">
             <img src="img/do-utilizador.png" alt="User Image" class="imagemPerfil">
@@ -58,32 +75,6 @@
         </div>
         <button id="botaoEdi" onclick="entrar()">Editar Perfil</button>
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/evo-calendar@1.1.2/evo-calendar/js/evo-calendar.min.js"></script>
-    <script src="js/evo-calendar.min.js"></script>
-
-    <script>
-        $('#calendar').evoCalendar({
-            'language': 'pt'
-        });
-
-
-        $(document).ready(function () {
-            $('#calendar').evoCalendar({
-                'theme': 'Midnight Blue'
-            })
-        });
-
-        $('#calendar').evoCalendar('addCalendarEvent', {
-            id: 'kNybja6',
-            name: 'Trabalho PI',
-            description: 'Apresentação do front end do trabalho de programação web',
-            date: 'june 03, 2024',
-            type: 'Trabalho'
-        });
-    </script>
-
 </body>
 
 </html>

@@ -28,9 +28,9 @@ const toggleModalCad = () => {
 [openModalButton, closeModalButton].forEach((el) => {
   el.addEventListener("click", () => toggleModal());
 });
-[openCadastroButton,closeCadastroButton].forEach((el) => {
-    el.addEventListener("click", () => toggleModalCad());
-  });
+[openCadastroButton, closeCadastroButton].forEach((el) => {
+  el.addEventListener("click", () => toggleModalCad());
+});
 
 // Aplica evento na submissão do formulário
 form.addEventListener("submit", (e) => {
@@ -43,11 +43,11 @@ function validaEntrada() {
   // Valores dos elementos
   let usuarioValor = txtusuario.value.trim();
   let senhaValor = txtsenha.value.trim();
-  
+
   //Verificando usuario
   if (usuarioValor === "") {
     MostraErro(txtusuario, "Usuário deve ser preenchido!");
-  }else{
+  } else {
     MostraSucesso(txtusuario);
 
   }
@@ -61,9 +61,9 @@ function validaEntrada() {
     MostraSucesso(txtsenha);
   }
 
-  if(senhaValor === "123456" || usuarioValor === "admin" ){
-    entrar.addEventListener('click', function() {
-      window.location.href = 'menu.html'; 
+  if (senhaValor === "123456" || usuarioValor === "admin") {
+    entrar.addEventListener('click', function () {
+      window.location.href = 'menu.html';
     });
   }
 
@@ -82,7 +82,7 @@ function validaCadastro() {
   let emailValor = txtemail.value.trim();
   let dataValor = txtdata.value.trim();
   let CsenhaValor = txtCsenha.value.trim();
-  
+
   //Verificando usuario
   if (userValor === "") {
     MostraErro(txtUsuario, "Usuário deve ser preenchido!");
@@ -111,15 +111,15 @@ function validaCadastro() {
 
 
   //Verificando senha
-  if (senValor === "" || CsenhaValor ==="") {
+  if (senValor === "" || CsenhaValor === "") {
     MostraErro(txtSenha, "Senha deve ser preenchida");
-    MostraErro(txtCsenha,"O confirmar senha deve ser preenchido");
+    MostraErro(txtCsenha, "O confirmar senha deve ser preenchido");
   } else if (senValor.length < 6 || senValor.length > 30) {
     MostraErro(txtSenha, "Senha deve ter entre  6 a 30 caracteres");
-  } else if (senValor !== CsenhaValor){
+  } else if (senValor !== CsenhaValor) {
     MostraErro(txtSenha, "A senha deve ser iguas a confirmar senha");
-    MostraErro(txtCsenha,"A senha deve ser iguas a confirmar senha");
-  } 
+    MostraErro(txtCsenha, "A senha deve ser iguas a confirmar senha");
+  }
   else {
     MostraSucesso(txtSenha);
     MostraSucesso(txtCsenha);
