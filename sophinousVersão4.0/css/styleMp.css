@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+html {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+
+}
+
+header {
+    background-color: #8EA390;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 5rem;
+    padding: 0.5rem;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    width: 27rem;
+}
+
+.icon {
+    width: 4rem;
+}
+
+.icon:hover {
+    width: 5.5rem;
+}
+
+nav .menu {
+    display: flex;
+    justify-content: space-around;
+    width: 26rem;
+}
+
+header h2 {
+    font-family: "Grand Hotel", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    margin-right: 20rem;
+}
+
+header .botao {
+    border-radius: 0.5rem;
+    border: none;
+    width: 10rem;
+    height: 3rem;
+    background-color: #D9D9D9;
+    font-family: "Grand Hotel";
+    box-sizing: border-box;
+    text-align: center;
+    display: inline-block;
+    font-size: 2rem;
+}
+
+header .dir {
+    display: flex;
+    width: 30rem;
+}
+
+.dir #txtBusca {
+    height: 2.8rem;
+    margin: auto;
+    margin-right: 0;
+
+
+}
+
+.dir #btnBusca {
+    margin: auto;
+    margin-left: 0;
+    height: 2.8rem;
+    width: 4rem;
+}
+
+.dir #btnBusca #iconb {
+    width: 2.3rem;
+    margin-top: 0, 3rem;
+    margin-right: 0.3rem;
+    box-sizing: border-box;
+}
+
+header h2:hover {
+    color: #011e2c;
+    cursor:default;
+
+}
+
+.dir #btnBusca:hover {
+    background-color: #011e2c;
+    color: white;
+}
+
+header .botao:hover {
+    background-color: #011e2c;
+    color: white;
+}
+
+.dir #img {
+    width: 20%;
+}
+
+body {
+    background: black;
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased !important;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #D9D9D9;
+    min-width: 15rem;
+    overflow: auto;
+    margin-top: 3.8rem;
+    margin-left: 8.5rem;
+    z-index: 1000;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    font-family: "Grand Hotel", cursive;
+    font-size: 1.2rem;
+    text-decoration: none;
+    max-height: 2.8rem;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #8EA390;
+    cursor: pointer;
+}
+
+.show {
+    display: block;
+}
+
+/* perfil modular*/
+#popuPerfil {
+    position: fixed;
+    top: 6.5rem;
+    right: 1rem;
+    width: 25rem;
+    padding: 2rem;
+    margin: auto;
+    background-color: #8EA390;
+    border: 0.5rem solid #D9D9D9;
+    box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.8rem;
+    display: none;
+    z-index: 1000;
+}
+
+.hidden {
+    display: none;
+}
+
+.perfil-header {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+
+}
+
+.imagemPerfil {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+}
+
+.perfil-stats {
+    margin-top: 1.5rem;
+    text-align: center;
+    font-size: 1.8rem;
+    font-family: "Grand Hotel";
+    box-sizing: border-box;
+
+}
+
+#contadorSegidores {
+    height: 3rem;
+    text-align: center;
+    background-color: #011e2c;
+    border: 0.2rem solid #D9D9D9;
+    color: #D9D9D9;
+    margin: auto;
+    margin-top: 1.5rem;
+    border-radius: 0.5rem;
+
+}
+
+#contadorSeguindo {
+    height: 3rem;
+    text-align: center;
+    background-color: #011e2c;
+    border: 0.2rem solid #D9D9D9;
+    color: #D9D9D9;
+    margin: auto;
+    margin-top: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+#botaoEdi {
+    border-radius: 0.5rem;
+    border: none;
+    width: 12rem;
+    height: 3rem;
+    margin: auto;
+    background-color: #D9D9D9;
+    font-family: "Grand Hotel";
+    box-sizing: border-box;
+    text-align: center;
+    align-items: center;
+    display: inline-block;
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-left: 4rem;
+}
+
+#botaoEdi:hover {
+    background-color: #011e2c;
+    color: white;
+}
+
+/* calendario */
+
+.hero {
+    width: 100%;
+    height: 100%;
+    background-color: linear-gradiente(45deg, #6ac1c5, #bda5ff);
+    position: absolute;
+    margin-top: 2rem;
+}
+
+#calendar {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 2rem;
+}
