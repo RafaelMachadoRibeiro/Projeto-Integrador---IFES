@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, ;
+
+}
+
+/* feed post*/
+.main {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+li {
+  list-style: none;
+}
+
+.newPost {
+  width: 100%;
+  height: 24rem;
+
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 5rem 0;
+  padding: 2.5rem;
+
+  background: #D9D9D9;
+  border-radius: 1rem;
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.05);
+}
+
+div.newPost div.infoUser {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div.newPost div.infoUser div.imgUser img {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  background: #333;
+}
+
+div.newPost div.infoUser strong {
+  font-size: 1.6rem;
+  color: #8EA390;
+  margin-left: 1rem;
+}
+
+div.newPost form.formPost {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+div.newPost form.formPost textarea {
+  background: #fff;
+  margin: 1.5rem 0;
+  padding: 2.5rem;
+  border-radius: 1rem;
+  resize: none;
+  border: 0;
+  height: 9rem;
+  outline: none;
+
+  font-weight: bold;
+  color: #727272;
+  font-family: 'Roboto', sans-serif;
+  border: 0.2rem solid #fff;
+}
+
+div.newPost form.formPost textarea:focus {
+  border: 0.2rem solid #8EA390;
+
+}
+
+div.newPost form.formPost div.iconsAndButton {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+div.newPost form.formPost div.iconsAndButton div.icons {
+  width: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+div.newPost form.formPost div.iconsAndButton div.icons buton {
+  outline: none;
+  margin-right: 1.5rem;
+  border: none;
+  background: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.btnFileForm img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: none;
+
+}
+
+div.newPost form.formPost div.iconsAndButton button.btnSubmitForm {
+  background: #8EA390;
+  padding: 1rem 5rem;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+
+  border: 0;
+  border-radius: 1rem;
+  transition: background 0.2s;
+}
+
+div.newPost form.formPost div.iconsAndButton button.btnSubmitForm:hover {
+  background: #011e2c;
+}
+
+ul.posts li.post {
+  margin-bottom: 5rem;
+  background: #fff;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  border-radius: 1rem;
+  padding: 2.5rem;
+  box-shadow: 1px 0 3px rgba(0, 0, 0, 0.05);
+}
+
+ul.posts li.post div.infoUserPost {
+  display: flex;
+  align-items: center;
+}
+
+ul.posts li.post div.infoUserPost div.imgUserPost img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: #8EA390;
+}
+
+ul.posts li.post div.infoUserPost div.nameAndHour {
+  margin-left: 1rem;
+}
+
+ul.posts li.post div.infoUserPost div.nameAndHour>strong {
+  color: #8EA390;
+}
+
+ul.posts li.post div.infoUserPost div.nameAndHour>p {
+  color: #d1d1d1;
+  font-size: 1.2rem;
+}
+
+ul.posts li.post>p {
+  width: 100%;
+  margin: 2rem 0;
+  font-weight: bold;
+  color: #727272;
+}
+
+ul.posts li.post div.actionBtnPost {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ul.posts li.post div.actionBtnPost button.filesPost {
+  padding: 0.5rem 2rem;
+  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  margin-right: 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  color: #fff;
+  font-weight: bold;
+  transition: background 0.2s;
+
+}
+
+ul.posts li.post div.actionBtnPost button.filesPost img {
+  margin-right: 0.5rem;
+}
+
+.like {
+  background: #ff6b6b;
+}
+
+.like:hover {
+  background: rgb(248, 75, 75);
+}
+
+.comment {
+  background: #ffc320;
+}
+
+.comment:hover {
+  background: rgb(245, 180, 0);
+}
+
+.share {
+  background: #23a0ff;
+}
+
+.share:hover {
+  background: rgb(8, 141, 241);
+}
+
+.materias {
+  border: 5px solid #8EA390;
+}
+
+.pastas {
+  border: 5px solid #8EA390;
+}
+
+.progWeb {
+  border: 5px solid #8EA390
+}
