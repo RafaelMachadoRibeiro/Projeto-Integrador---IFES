@@ -1,12 +1,12 @@
 const openModalButton = document.querySelector(".botao");
 const closeModalButton = document.querySelector("#close-modal");
-const closeCadastroButton = document.querySelector("#close-modalCad")
+const closeCadastroButton = document.querySelector("#close-modalCad");
 const entrar = document.querySelector("#entrar");
-const openCadastroButton = document.querySelector("#but_cad")
+const openCadastroButton = document.querySelector("#but_cad");
 const modal = document.querySelector("#modal");
-const modalCadastro = document.querySelector("#modal_cadastro")
+const modalCadastro = document.querySelector("#modal_cadastro");
 const form = document.querySelector(".form");
-const fromCadastro = document.querySelector(".form_cadastro")
+const formCadastro = document.querySelector(".form_cadastro");
 const txtusuario = document.querySelector("#txtusuario");
 const txtUsuario = document.querySelector("#txtUsuario");
 const txtsenha = document.querySelector("#txtsenha");
@@ -14,62 +14,60 @@ const txtSenha = document.querySelector("#txtSenha");
 const txtnome = document.querySelector("#txtnome");
 const txtdata = document.querySelector("#txtdata");
 const txtemail = document.querySelector("#txtemail");
-const txtCsenha = document.querySelector("#txtCsenha ");
-
+const txtCsenha = document.querySelector("#txtCsenha");
 
 const toggleModal = () => {
   modal.classList.toggle("hide");
-
 };
+
 const toggleModalCad = () => {
   modalCadastro.classList.toggle("hide");
-
 };
+
 [openModalButton, closeModalButton].forEach((el) => {
   el.addEventListener("click", () => toggleModal());
 });
+
 [openCadastroButton, closeCadastroButton].forEach((el) => {
   el.addEventListener("click", () => toggleModalCad());
 });
 
-// Aplica evento na submissão do formulário
+// Aplica evento na submissão do formulário de login
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   validaEntrada();
 });
-
 
 function validaEntrada() {
   // Valores dos elementos
   let usuarioValor = txtusuario.value.trim();
   let senhaValor = txtsenha.value.trim();
 
-  //Verificando usuario
+  // Verificando usuario
   if (usuarioValor === "") {
     MostraErro(txtusuario, "Usuário deve ser preenchido!");
   } else {
     MostraSucesso(txtusuario);
-
   }
 
-  //Verificando senha
+  // Verificando senha
   if (senhaValor === "") {
     MostraErro(txtsenha, "Senha deve ser preenchida");
   } else if (senhaValor.length < 6 || senhaValor.length > 30) {
-    MostraErro(txtsenha, "Senha deve ter entre  6 a 30 caracteres");
+    MostraErro(txtsenha, "Senha deve ter entre 6 a 30 caracteres");
   } else {
     MostraSucesso(txtsenha);
   }
 
   if (senhaValor === "123456" || usuarioValor === "admin") {
     entrar.addEventListener('click', function () {
-      window.location.href = 'menu.html';
+      window.location.href = 'menu.php';
     });
   }
-
 }
 
-fromCadastro.addEventListener("submit", (el) => {
+// Aplica evento na submissão do formulário de cadastro
+formCadastro.addEventListener("submit", (el) => {
   el.preventDefault();
   validaCadastro();
 });
@@ -83,7 +81,7 @@ function validaCadastro() {
   let dataValor = txtdata.value.trim();
   let CsenhaValor = txtCsenha.value.trim();
 
-  //Verificando usuario
+  // Verificando usuario
   if (userValor === "") {
     MostraErro(txtUsuario, "Usuário deve ser preenchido!");
   } else {
@@ -103,28 +101,28 @@ function validaCadastro() {
   }
 
   if (dataValor === "") {
-    MostraErro(txtdata, "A data de Nascimeto deve ser preenchido!");
+    MostraErro(txtdata, "A data de Nascimento deve ser preenchida!");
   } else {
     MostraSucesso(txtdata);
   }
 
-
-
-  //Verificando senha
+  // Verificando senha
   if (senValor === "" || CsenhaValor === "") {
     MostraErro(txtSenha, "Senha deve ser preenchida");
     MostraErro(txtCsenha, "O confirmar senha deve ser preenchido");
   } else if (senValor.length < 6 || senValor.length > 30) {
-    MostraErro(txtSenha, "Senha deve ter entre  6 a 30 caracteres");
+    MostraErro(txtSenha, "Senha deve ter entre 6 a 30 caracteres");
   } else if (senValor !== CsenhaValor) {
-    MostraErro(txtSenha, "A senha deve ser iguas a confirmar senha");
-    MostraErro(txtCsenha, "A senha deve ser iguas a confirmar senha");
-  }
-  else {
+    MostraErro(txtSenha, "A senha deve ser igual a confirmar senha");
+    MostraErro(txtCsenha, "A senha deve ser igual a confirmar senha");
+  } else {
     MostraSucesso(txtSenha);
     MostraSucesso(txtCsenha);
-  }
 
+    // Se todos os campos são válidos, exibe alerta de sucesso
+    // Aqui você pode enviar o formulário, se necessário
+    formCadastro.submit();
+  }
 }
 
 // Se existe algum erro, então apresenta na tela.

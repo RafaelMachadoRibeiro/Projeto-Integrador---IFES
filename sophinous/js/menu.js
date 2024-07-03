@@ -1,6 +1,6 @@
 
 function entrar() {
-  document.getElementById("botaoEdi").addEventListener(window.location.href = 'perfil.html');
+  document.getElementById("botaoEdi").addEventListener(window.location.href = 'perfil.php');
 }
 function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");

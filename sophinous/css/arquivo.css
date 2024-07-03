@@ -1,0 +1,160 @@
+/* Importação das fontes */
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Definição básica da fonte */
+html {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+/* Container principal */
+.container {
+    display: flex;
+    background-color: black;
+    padding: 20px;
+    margin-top: 20px; 
+}
+
+/* Estilos da barra lateral */
+.sidebar {
+    width: 20%;
+    background-color: black;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border: 5px solid #8EA390;
+    border-radius: 1.5%;
+}
+
+.sidebar button {
+    background-color: #011e2c;
+    color: #ffffff;
+    border: none;
+    margin: 10px 0;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.sidebar button:hover {
+    width: 101%; 
+    background-color:#4a6056;
+}
+
+.sidebar button:active, .sidebar button.active {
+    width: 101%;
+    background-color:#8EA390;
+    color: #ffffff;
+}
+
+/* Estilos específicos para os botões de adicionar e excluir pastas */
+.add-sidebar-btn, .remove-sidebar-btn {
+    background-color: #8EA390;
+    color: white;
+}
+
+.add-sidebar-btn:hover, .remove-sidebar-btn:hover {
+    background-color: #6c907a;
+    color: #ffffff;
+}
+
+.add-sidebar-btn:active, .remove-sidebar-btn:active {
+    background-color: #4a6056;
+    color: #ffffff;
+}
+
+/* Estilos do conteúdo */
+.content {
+    width: 80%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: 5px solid #8EA390;
+    border-radius: 1%;
+    margin-left: 20px;
+}
+
+/* Estilos das pastas */
+.folder-container {
+    display: none;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.folder {
+    width: 60%;
+    margin: 18px;
+    text-align: center;
+    background-color: #011e2c;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.folder a {
+    text-decoration: none;
+}
+
+.folder img {
+    width: 50px;
+    height: 50px;
+}
+
+.folder span {
+    display: block;
+    margin-top: 10px;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.folder .delete-btn {
+    background-color: #ff4d4d;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.folder .delete-btn:hover {
+    background-color: #ff1a1a;
+}
+
+/* Estilos dos botões de ação */
+.action-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    bottom: 20px;
+    left: 0;
+    margin-bottom: 0.8rem;
+}
+
+.btn-action {
+    background-color: #8EA390;
+    border: none;
+    padding: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+
+.btn-action img {
+    width: 3rem;
+    height: 3rem;
+}
+
+.btn-action:hover {
+    background-color: #ffffff;
+}
