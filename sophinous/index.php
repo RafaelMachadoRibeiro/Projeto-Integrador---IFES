@@ -6,7 +6,12 @@ unset($_SESSION['errors']);
 unset($_SESSION['successMessage']);
 ?>
 
-<?php require_once 'templates/headerIndex.php'; ?>
+<?php require_once 'templates/headerIndex.php'; 
+
+include_once 'controller/IndexControlador.php';
+
+?>
+
 
 <section class="meio">
     <article>
@@ -64,7 +69,7 @@ unset($_SESSION['successMessage']);
     <img id="login2" src="img/WhatsApp Image 2024-04-08 at 11.42.03.jpeg" alt="Logo">
 
     <div id="cadastro">
-        <form class="form_cadastro" method="POST" action="formularioIndex.php">
+        <form class="form_cadastro" method="POST" action="controller/IndexControlador.php">
             <input type="hidden" name="form_cadastro" value="1">
             <div class="form-control">
                 <input type="text" name="txtusuario" id="txtUsuario" placeholder="Nome de Usuário:">
@@ -75,12 +80,12 @@ unset($_SESSION['successMessage']);
                 <small><?php echo in_array("Nome Completo é obrigatório.", $errors) ? "Nome Completo é obrigatório." : ""; ?></small>
             </div>
             <div class="form-control">
-                <input type="date" name="txtdata" id="txtdata" placeholder="Data de Nascimento:">
-                <small><?php echo in_array("Data de Nascimento é obrigatório.", $errors) ? "Data de Nascimento é obrigatório." : ""; ?></small>
-            </div>
-            <div class="form-control">
                 <input type="email" name="txtemail" id="txtemail" placeholder="Email:">
                 <small><?php echo in_array("Email é obrigatório.", $errors) ? "Email é obrigatório." : ""; ?></small>
+            </div>
+            <div class="form-control">
+                <input type="date" name="txtdata" id="txtdata" placeholder="Data de Nascimento:">
+                <small><?php echo in_array("Data de Nascimento é obrigatório.", $errors) ? "Data de Nascimento é obrigatório." : ""; ?></small>
             </div>
             <div class="form-control">
                 <input type="password" name="txtsenha" id="txtSenha" placeholder="Senha:">
@@ -93,7 +98,7 @@ unset($_SESSION['successMessage']);
             <div class="form-control">
                 <small><?php echo in_array("As senhas não coincidem.", $errors) ? "As senhas não coincidem." : ""; ?></small>
             </div>
-            <button type="submit">Cadastrar</button>
+            <button type="submit" name="btnoperacao" class="btn" value="incluir">Cadastrar</button>
             <button type="reset">Limpar</button>
         </form>
     </div>

@@ -7,9 +7,8 @@
         private $nome;
         private $senha;
 
-        public function __construct($id,$User,$Email,$date,$nome,$senha) 
+        public function __construct($User, $nome, $Email, $datans, $senha,) 
         {
-            $this->id = $id;
             $this-> user = $User;
             $this-> nome = $nome;
             $this-> email = $Email;

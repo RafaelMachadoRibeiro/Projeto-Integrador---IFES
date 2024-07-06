@@ -1,5 +1,5 @@
 <?php
-	require_once 'config.php';
+	require_once 'model/config.php';
 	
 	/*************************************************************
 	Objetivo: Classe responsável por representar a conexão com o banco de dados.
